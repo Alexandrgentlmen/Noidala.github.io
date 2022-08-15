@@ -4,11 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#111111">
   <title>Noidala</title>
-  <link rel="prefetch" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin>
+
+   <script src="https://api-maps.yandex.ru/2.1/?apikey=eb405125-b825-4781-9fbd-f6f10f6ead2a&lang=ru_RU"
+    type="text/javascript"></script>
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
   <script defer src="js/main.js"></script>
@@ -128,8 +130,8 @@
   </div>
 </section>
 
-      <section id="house" class="hunters-house parallax-window" data-parallax="scroll" data-speed="-0.2"
-data-natural-width="4001" data-natural-height="1651" data-image-src="img/house-black--lake.jpg">
+      <section id="house" class="hunters-house parallax-window" data-parallax="scroll" data-speed="0.1"
+data-image-src="img/house-black--lake.jpg">
   <div class="container hunters-house__container">
     <h1 class="hunters-house__title">
       <strong class="hunters-house__title title-strong">Дом охотника</strong>
@@ -187,52 +189,43 @@ data-natural-width="4001" data-natural-height="1651" data-image-src="img/house-b
   </div>
 </section>
 
-      <section class="extra parallax-window" data-parallax="scroll" data-speed="0.5" data-image-src="img/sauna.jpg">
+      <section class="location">
+  <div class="location__info-address">
+    <h1 class="location__title">Мы находимся здесь!</h1>
+    <p class="location__text-address">Тихвинский район, Пашозерская волость, Деревня Чога.</p>
+    <p class="location__text">Как добраться:</p>
+    <p class="location__text-transport">На личном транспорте: по Мурманскому шоссе до Волхова (перед городом поворот на Тихвин), не въезжая в г. Тихвин поворот на Шугозеро, после поселка Шугозеро до п.Пашозеро и по указателю на д. Чога. В самой деревне первый поворот налево (первый дом). GPS координаты — 60° 2’56.97"С — 34°37’27.18"В</p>
+    <p class="location__text-transport">На общественном транспорте: от петербургского автовокзала отправляются автобусы до Тихвина, далее на такси.</p>
+  </div>
+  <div id="map" class="location__map map">
+  </div>
+</section>
+
+      <section class="extra parallax-window" data-parallax="scroll" data-image-src="img/sauna.jpg">
   <div class="container extra__container">
     <h1 class="extra__title title-strong" id="service">
       Дополните льно:
     </h1>
     <ul class="extra__list">
       <li class="extra__items">
-        <!-- <svg class="extra__svg extra__svg-services" aria-hidden="leaf">
-          <use xlink:href="img/sprite.svg#leaf"></use>
-				</svg> -->
                     Услуги банщика
         </li>
       <li class="extra__items">
-        <!-- <svg class="extra__svg extra__svg-sheet" aria-hidden="leaf">
-          <use xlink:href="img/sprite.svg#leaf"></use>
-				</svg> -->
                     После парения — холодная простыня, замоченная в настое травяного сбора
       </li>
       <li class="extra__items">
-        <!-- <svg class="extra__svg extra__svg-samovar" aria-hidden="leaf">
-          <use xlink:href="img/sprite.svg#leaf"></use>
-				</svg> -->Настоящий самовар на дровах
+        Настоящий самовар на дровах
       </li>
       <li class="extra__items">
-        <!-- <svg class="extra__svg" aria-hidden="leaf">
-          <use xlink:href="img/sprite.svg#leaf"></use>
-				</svg> -->
-                <div class="extra__option">
                     Бодрящие травяные чаи
       </li>
       <li class="extra__items">
-        <!-- <svg class="extra__svg" aria-hidden="leaf">
-          <use xlink:href="img/sprite.svg#leaf"></use>
-				</svg> -->
                     Морсы из лесных ягод
       </li>
       <li class="extra__items">
-        <!-- <svg class="extra__svg extra__svg-hunny" aria-hidden="leaf">
-          <use xlink:href="img/sprite.svg#leaf"></use>
-				</svg> -->
                     Мёд варенье — <br>дары местной природы
       </li>
       <li class="extra__items">
-       <!-- <svg class="extra__svg" aria-hidden="leaf">
-          <use xlink:href="img/sprite.svg#leaf"></use>
-				</svg>  -->
                     Зимой — прорубь
       </li>
     </ul>
@@ -328,5 +321,4 @@ data-natural-width="4001" data-natural-height="1651" data-image-src="img/house-b
 
   </div>
 </body>
-
 </html>
