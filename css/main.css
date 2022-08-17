@@ -2643,7 +2643,7 @@ a {
 }
 @media (min-width: 1920px) {
   .location__info-address {
-    width: 40% px;
+    width: 30%;
   }
 }
 @media (max-width: 1440px) {
