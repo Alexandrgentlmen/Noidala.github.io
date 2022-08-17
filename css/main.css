@@ -2641,6 +2641,11 @@ a {
   width: 560px;
   padding-left: max(15px, (100% - var(--content-width)) / 2);
 }
+@media (min-width: 1920px) {
+  .location__info-address {
+    width: 40% px;
+  }
+}
 @media (max-width: 1440px) {
   .location__info-address {
     max-width: 360px;
