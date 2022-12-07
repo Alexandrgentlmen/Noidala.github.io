@@ -1,28 +1,49 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="theme-color" content="#111111" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
   <title>Noidala</title>
-  <link rel="stylesheet" href="css/main.min.css" />
+
+   <script src="https://api-maps.yandex.ru/2.1/?apikey=eb405125-b825-4781-9fbd-f6f10f6ead2a&lang=ru_RU"
+    type="text/javascript"></script>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
 </head>
 
-<body>
+<body class="page__body">
   <div class="site-container">
-    <header class="header">
-  <div class="container header__container">
-		<div class="parallax">
-			<div class="header__parallax-fog"></div>
-		</div>
-    <a href="#" class="logo header__logo" aria-label="logo">Noidala</a>
+    <header class="header white">
+  <div class="container">
+        <button class="nav__btn_burger burger btn-reset">
+            <span id="nav-icon3">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </button>
+        <nav class="header__nav">
+            <ul class="header__list list-reset">
+                <li class="header__item"><a href="#home" class="header__link">Home</a></li>
+                <li class="header__item"><a href="#gallery" class="header__link">Gallery</a></li>
+                <li class="header__item"><a href="#sauna" class="header__link">Sauna</a></li>
+                <li class="header__item"><a href="#service" class="header__link">Service</a></li>
+                <li class="header__item"><a href="#contact" class="header__link">Contacts</a></li>
+            </ul>
+        </nav>
+        <div class="parallax">
+            <div class="header__parallax-fog"></div>
+        </div>
+    <h1 href="#" id="home" class="header__headline" aria-label="logo">Noidala</span></h1>
     <p class="header__text">Загородный клубный отдых</p>
     <form action="#" class="header__search-form search-form">
-      <ul class="search-form__list">
+      <ul class="search-form__list list-reset">
         <li class="search-form__item">
           <button class="search-form__link btn-reset search-form__link--tour" aria-label="Go to tour">
             Тур
@@ -46,40 +67,46 @@
       </ul>
     </form>
   </div>
+    <a href="#" class="back">Наверх</a>
 </header>
 
     <main class="main">
-      <section class="snowmobiles">
+      <section id="tour" class="snowmobiles">
   <div class="container snowmobiles__container">
-		
+
     <div class="snowmobiles__promotext">
-      <h1 class="title-strong snowmobiles__lead">Туры на снегоходах</h1>
-      <strong class="snowmobiles__slogan">Окунитесь в настоящее снежное сафари!</strong>
-      <pre class="snowmobiles__text">
-Забудьте шумные офисы и городские пробки,
-оставьте будничные проблемы!
-Что может быть лучше, чем катание на снегоходе?
-Только катание на правильном снегоходе,
-в профессиональной экипировке и в хорошей компании!
-      </pre>
+      <h1 class="title-strong snowmobiles__lead">Туры на снегоходах</h1>
+      <strong class="snowmobiles__slogan">Окунитесь в настоящее<br> снежное сафари!</strong>
+      <div class="snowmobiles__text">
+Забудьте шумные офисы и городские пробки,
+оставьте будничные проблемы!<br>
+Что может быть лучше, чем катание на снегоходе?
+Только катание на правильном снегоходе,
+в профессиональной экипировке и в хорошей компании!
+            </div>
     </div>
     <div class="snowmobiles__promo">
       <span class="snowmobiles__descr">
-        <h2 class="snowmobiles__title">К услугам гостей:</h2>
-        <ul class="snowmobiles__items">
-          <li class="snowmobiles__item">Полная профессиональная
-            снегоходная экипировка</li>
-          <li class="snowmobiles__item">Сопровождение опытного инструктора</li>
-          <li class="snowmobiles__item">Горячий ароматный чай с легкой закуской</li>
-          <li class="snowmobiles__item">Полный бак топлива</li>
-        </ul>
-			</span>
-			<img src="../img/driver2.jpg" alt="снегоходы" class="snowmobiles__img">
-		</div>
-	</div>
+        <h2 class="snowmobiles__title">К услугам гостей:</h2>
+        <ul class="snowmobiles__item list-reset">
+          <li class="snowmobiles__items snowmobiles__scooter"></li>
+          <li class="snowmobiles__items snowmobiles__runningman"></li>
+          <li class="snowmobiles__items snowmobiles__tea"></li>
+          <li class="snowmobiles__items snowmobiles__rocket"></li>
+                </ul>
+                <ul class="snowmobiles__option list-reset">
+          <li class="snowmobiles__options">Полная профессиональная снегоходная экипировка</li>
+          <li class="snowmobiles__options">Сопровождение опытного инструктора</li>
+          <li class="snowmobiles__options">Горячий ароматный чай с легкой закуской</li>
+          <li class="snowmobiles__options">Полный бак топлива</li>
+              </ul>
+            </span>
+            <img src="img/driver2.jpg" alt="снегоходы" class="snowmobiles__img">
+        </div>
+    </div>
 </section>
 
-      <section class="gallary-forest">
+      <section class="gallary-forest white">
   <div class="container gallary-forest__container">
     <pre class="gallary-forest__slogan">
      Разве не хотелось бы Вам отдохнуть от суеты города, 
@@ -87,44 +114,29 @@
         гламурных ресторанов - всего того ненастоящего, 
                          на что тратятся годы, силы и нервы?
 		</pre>
-    <div class="slider">
-      <div class="slider__item">
-        <img src="img/autumn.jpg" alt="autumn" class="slider__image" />
-      </div>
-      <div class="slider__item">
-        <img src="img/forest-list.jpg" alt="forest" class="slider__image" />
-      </div>
-      <div class="slider__item">
-        <img src="img/trees.JPG" alt="trees" class="slider__image" />
-      </div>
-      <div class="slider__item">
-        <img src="img/fog.jpg" alt="nature-forest" class="slider__image" />
-      </div>
-      <div class="slider__item">
-        <img src="img/house-on--lake.jpg" alt="lake" class="slider__image" />
-      </div>
-      <div class="slider__item">
-        <img src="img/house-lake.jpg" alt="lake" class="slider__image" />
-      </div>
+    <div class="slider" id="gallery">
+
+        <img src="img/autumn.jpg" alt="autumn" class="slider__item slider__image" />
+
+        <img src="img/forest-list.jpg" alt="forest" class="slider__item slider__image" />
+
+        <img src="img/trees.jpg" alt="trees" class="slider__item slider__image" />
+
+        <img src="img/fog.jpg" alt="nature-forest" class="slider__item slider__image" />
+
+        <img src="img/house-on--lake.jpg" alt="lake" class="slider__item slider__image" />
+
     </div>
   </div>
 </section>
 
-      <section class="map">
-
-  <h1 class="map__title">Мы находимся здесь!</h1>
-  <p class="map__text">Как добраться:</p>
-  <div id="map">
-  </div>
-
-</section>
-
-      <section class="hunters-house">
+      <section id="house" class="hunters-house parallax-window" data-parallax="scroll" data-speed="0.1"
+data-image-src="img/house-black--lake.jpg">
   <div class="container hunters-house__container">
     <h1 class="hunters-house__title">
       <strong class="hunters-house__title title-strong">Дом охотника</strong>
     </h1>
-    <ul class="hunters-house__item">
+    <ul class="hunters-house__item list-reset">
       <li class="hunters-house__items">дровяная печь-камин</li>
       <li class="hunters-house__items">электрическое отопление</li>
       <li class="hunters-house__items">сушильный шкаф</li>
@@ -132,97 +144,89 @@
       <li class="hunters-house__items">холодильник</li>
       <li class="hunters-house__items">посудомоечная машина</li>
       <li class="hunters-house__items">стиральная машина</li>
-      <li class="hunters-house__items">посуда и бокалы</li>
+      <li class="hunters-house__items">посуда и бокалы</li>
       <li class="hunters-house__items">электрочайник, кофеварка</li>
       <li class="hunters-house__items">пылесос</li>
       <li class="hunters-house__items">телевизор, спутниковое ТВ</li>
     </ul>
-    <svg class="hunters-house__svg" aria-hidden="sign-A">
+    <svg class="hunters-house__svg" aria-hidden="sign-A" viewbox="-399 2 1164 201">
       <use xlink:href="img/sprite.svg#A"></use>
     </svg>
   </div>
 </section>
 
-      <section class="sauna">
+      <section class="sauna white">
   <div class="container sauna__container">
-    <h1 class="sauna__caption title-strong">Баня</h1>
-    <p class="sauna__text">Бревенчатый дом из сухостойной древесины (kelo) у воды на берегу реки.
-      Небольшой уютный зал с дровяным камином и выходом на открытую террасу. </p>
-    <ul class="sauna__list">
+    <h1 class="sauna__caption title-strong" id="sauna">Баня</h1>
+    <p class="sauna__text">Бревенчатый дом из сухостойной древесины (kelo) у воды на берегу реки.
+      Небольшой уютный зал с дровяным камином и выходом на открытую террасу. </p>
+    <ul class="sauna__list list-reset" >
       <li class="sauna__items">
         <svg class="sauna__svg sauna__svg--broom" aria-hidden="sign-A">
-          <use xlink:href="../img/sprite.svg#Broom"></use>
+          <use xlink:href="img/sprite.svg#Broom"></use>
         </svg>Березовые веники</li>
       <li class="sauna__items">
         <svg class="sauna__svg sauna__svg--bedsheet" aria-hidden="sign-A">
-          <use xlink:href="../img/sprite.svg#Broom"></use>
+          <use xlink:href="img/sprite.svg#Broom"></use>
         </svg>Простыни</li>
       <li class="sauna__items">
         <svg class="sauna__svg sauna__svg--towel" aria-hidden="sign-A">
-          <use xlink:href="../img/sprite.svg#Broom"></use>
+          <use xlink:href="img/sprite.svg#Broom"></use>
         </svg>Полотенца</li>
       <li class="sauna__items">
         <svg class="sauna__svg sauna__svg--bathrobes" aria-hidden="sign-A">
-          <use xlink:href="../img/sprite.svg#Broom"></use>
+          <use xlink:href="img/sprite.svg#Broom"></use>
         </svg>Халаты</li>
       <li class="sauna__items">
         <svg class="sauna__svg sauna__svg--bathshoose" aria-hidden="sign-A">
-          <use xlink:href="../img/sprite.svg#Broom"></use>
+          <use xlink:href="img/sprite.svg#Broom"></use>
         </svg>Тапочки</li>
       <li class="sauna__items">
         <svg class="sauna__svg sauna__svg--glasses" aria-hidden="sign-A">
-          <use xlink:href="../img/sprite.svg#Broom"></use>
+          <use xlink:href="img/sprite.svg#Broom"></use>
         </svg>Чашки, стаканы</li>
     </ul>
   </div>
 </section>
 
-      <section class="extra">
+      <section class="location">
+  <div class="location__info-address">
+    <h1 class="location__title">Мы находимся здесь!</h1>
+    <p class="location__text-address">Тихвинский район, Пашозерская волость, Деревня Чога.</p>
+    <p class="location__text">Как добраться:</p>
+    <p class="location__text-transport">На личном транспорте: по Мурманскому шоссе до Волхова (перед городом поворот на Тихвин), не въезжая в г. Тихвин поворот на Шугозеро, после поселка Шугозеро до п.Пашозеро и по указателю на д. Чога. В самой деревне первый поворот налево (первый дом). GPS координаты — 60° 2’56.97"С — 34°37’27.18"В</p>
+    <p class="location__text-transport">На общественном транспорте: от петербургского автовокзала отправляются автобусы до Тихвина, далее на такси.</p>
+  </div>
+  <div id="map" class="location__map map">
+  </div>
+</section>
+
+      <section class="extra parallax-window" data-parallax="scroll" data-image-src="img/sauna.jpg">
   <div class="container extra__container">
-    <h1 class="extra__title title-strong">
+    <h1 class="extra__title title-strong" id="service">
       Дополните льно:
     </h1>
-    <ul class="extra__list">
+    <ul class="extra__list list-reset">
       <li class="extra__items">
-        <svg class="extra__svg extra__svg-services" aria-hidden="leaf">
-          <use xlink:href="img/sprite.svg#leaf"></use>
-        </svg>
-        Услуги банщика</li>
+                    Услуги банщика
+        </li>
       <li class="extra__items">
-        <svg class="extra__svg extra__svg-sheet" aria-hidden="leaf">
-          <use xlink:href="img/sprite.svg#leaf"></use>
-        </svg>
-        После парения - холодная простыня, замоченная в настое травяного сбора
+                    После парения — холодная простыня, замоченная в настое травяного сбора
       </li>
       <li class="extra__items">
-        <svg class="extra__svg extra__svg-samovar" aria-hidden="leaf">
-          <use xlink:href="img/sprite.svg#leaf"></use>
-        </svg>
-        Настоящий самовар на дровах
+        Настоящий самовар на дровах
       </li>
       <li class="extra__items">
-        <svg class="extra__svg" aria-hidden="leaf">
-          <use xlink:href="img/sprite.svg#leaf"></use>
-        </svg>
-        Бодрящий травянные чаи
+                    Бодрящие травяные чаи
       </li>
       <li class="extra__items">
-        <svg class="extra__svg" aria-hidden="leaf">
-          <use xlink:href="img/sprite.svg#leaf"></use>
-        </svg>
-        Морсы из лесных ягод
+                    Морсы из лесных ягод
       </li>
       <li class="extra__items">
-        <svg class="extra__svg extra__svg-hunny" aria-hidden="leaf">
-          <use xlink:href="img/sprite.svg#leaf"></use>
-        </svg>
-        Мёд варенье - <br>дары местной природы
+                    Мёд варенье — <br>дары местной природы
       </li>
       <li class="extra__items">
-        <svg class="extra__svg" aria-hidden="leaf">
-          <use xlink:href="img/sprite.svg#leaf"></use>
-        </svg>
-        Зимой - прорубь
+                    Зимой — прорубь
       </li>
     </ul>
     <img src="img/cane-small.png" alt="flower-mini" class="extra__flower extra__flower_small">
@@ -231,39 +235,39 @@
   </div>
 </section>
 
-      <section class="stable">
+      <section id="stable" class="stable white">
   <div class="container stable__container">
     <h1 class="stable__caption title-strong">Конюшня</h1>
-    <p class="stable__text">Увлекательные конные маршруты по пересеченной местности не оставляют равнодушными наших
+    <p class="stable__text">Увлекательные конные маршруты по пересеченной местности не оставляют равнодушными наших
       гостей!</p>
     <div class="slider-stable">
       <div class="slider-stable__item">
-        <img src="../img/girl-riding-black-horse .jpg" alt="forest" class="slider-stable__image" />
+        <img src="img/girl-riding-black-horse .jpg" alt="forest" class="slider-stable__image" />
         <p class="slider-stable__text"><b>Разнообразные<br>конные маршруты<br>для подготовленных гостей</b></p>
         </p>
       </div>
       <div class="slider-stable__item">
-        <img src="../img/close-up-of-horse-nose.jpg" alt="trees" class="slider-stable__image" />
-        <p class="slider-stable__text"><b>Размещение личного тренера, берейтора в квартире-мансарда в здании конюшни</b>
+        <img src="img/close-up-of-horse-nose.jpg" alt="trees" class="slider-stable__image" />
+        <p class="slider-stable__text"><b>Размещение личного тренера, берейтора в квартире-мансарда в здании конюшни</b>
         </p>
       </div>
       <div class="slider-stable__item">
-        <img src="../img/brown-horse.jpg" alt="autumn" class="slider-stable__image" />
+        <img src="img/brown-horse.jpg" alt="autumn" class="slider-stable__image" />
         <p class="slider-stable__text"><b>Обучение верховой езде</b>
         </p>
       </div>
       <div class="slider-stable__item">
-        <img src="../img/girl-riding-black-horse .jpg" alt="forest" class="slider-stable__image" />
+        <img src="img/girl-riding-black-horse .jpg" alt="forest" class="slider-stable__image" />
         <p class="slider-stable__text"><b>Разнообразные<br>конные маршруты<br>для подготовленных гостей</b></p>
         </p>
       </div>
       <div class="slider-stable__item">
-        <img src="../img/close-up-of-horse-nose.jpg" alt="trees" class="slider-stable__image" />
-        <p class="slider-stable__text"><b>Размещение личного тренера, берейтора в квартире-мансарда в здании конюшни</b>
+        <img src="img/close-up-of-horse-nose.jpg" alt="trees" class="slider-stable__image" />
+        <p class="slider-stable__text"><b>Размещение личного тренера, берейтора в квартире-мансарда в здании конюшни</b>
         </p>
       </div>
       <div class="slider-stable__item">
-        <img src="../img/brown-horse.jpg" alt="autumn" class="slider-stable__image" />
+        <img src="img/brown-horse.jpg" alt="autumn" class="slider-stable__image" />
         <p class="slider-stable__text"><b>Обучение верховой езде</b>
         </p>
       </div>
@@ -274,7 +278,7 @@
     </main>
     <footer class="footer">
   <div class="container footer__container">
-    <div class="footer__logo">
+    <div class="footer__logo" id="contact">
       <p class="footer__logo-text">Noidala</p>
       <svg class="footer__svg footer__svg-services" aria-hidden="leaf">
         <use xlink:href="img/sprite.svg#leaf"></use>
@@ -285,9 +289,9 @@
         Тихвинский район, Ленинградская область
       </p>
       <a href="tel:+7(911)922-42-29" class="footer__call">
-        &nbsp;&nbsp;+7&nbsp;&nbsp;911&nbsp;&nbsp;922-42-29
+        +7 911 922-42-29
       </a>
-      <ul class="social-list">
+      <ul class="social-list list-reset">
         <li class="social-list__item">
           <a href="https://www.vk.com/" class="social-list__link vk social">
             <svg class="social-list__svg" aria-hidden="vkontakte">
@@ -312,14 +316,9 @@
       </ul>
     </div>
   </div>
-  <img class="footer__main-image" src="../img/sign-n.png" alt="sign-N">
+  <img class="footer__main-image" src="img/sign-n.png" alt="sign-N">
 </footer>
 
   </div>
-
-  <script src="js/main.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6AabWEm8-qPXW3StvaW1pMfx7iedpcqs&callback=initMap">
-  </script>
 </body>
-
 </html>
